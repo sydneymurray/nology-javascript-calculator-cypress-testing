@@ -1,6 +1,38 @@
 let operand = null
 let previousOperation = null
+let runningTotal = false
 let display = document.querySelector("h1")
+
+function displayOperationClicked(event){
+    switch (event.target.innerText){
+        case "C":
+            display.innerText = "0";
+            operand = null;
+            previousOperation = null;
+            runningTotal = false;
+            return;
+        case "←":
+            display.innerText = display.innerText.slice(0, length-1);
+            return;
+        case "±":
+            display.innerText = 0 - Number(display.innerText);
+            return; 
+        case "%":
+            display.innerText = Number(display.innerText) / 100;
+            break;       
+        default:
+    }
+}
+
+function numberClicked(event){
+    if (display.innerText === "0" || runningTotal )
+        display.innerText = event.target.innerText
+    else
+        display.innerText += event.target.innerText 
+    
+    console.log("Operand: " + operand)
+    console.log("Operation: " + previousOperation)
+}
 
 function operatorClicked(event){
     if (!operand){
@@ -8,9 +40,10 @@ function operatorClicked(event){
         previousOperation = event.target.innerText
         display.innerText = "0"
         return
-    }   
-
-    switch (operand){
+    }
+    
+    runningTotal = true
+    switch (previousOperation){
         case "x":
             display.innerText = Number(operand) * Number(display.innerText);
             break;
@@ -25,37 +58,19 @@ function operatorClicked(event){
             break;
         default:
     }
-    
+
     if (event.target.innerText === "="){
         operand = null;
         previousOperation = null;
+        runningTotal = false
     } else{
         previousOperation = event.target.innerText
-
-    }
-    console.log("Operand: "+operand, "Operation: "+previousOperation)
-
-
-
-}
-
-function numberClicked(event){
-    if (display.innerText === "0" || previousOperation)
-        display.innerText = event.target.innerText
-    else
-        display.innerText += event.target.innerText 
-}
-function displayOperationClicked(event){
-    switch (event.target.innerText){
-        case "C":
-            display.innerText = "0";
-            operand = null;
-            previousOperation = null;
-            return;
-        case "←":
-            display.innerText = display.innerText.slice(0, length-1);
-            return;
-        default:
+        operand = display.innerText
+        //display.innerText = "0"
     }
 
+    console.log("Operand: " + operand)
+    console.log("Operation: " + previousOperation)
 }
+
+
