@@ -1,18 +1,21 @@
 
-#phone{
+#calculator{
     max-width: 400px;
     background-color: #dddddd;
+    //background-color: rgb(246, 239, 239);
     border-radius: 20px;
     padding: 2ch;
     margin: 10ch auto;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%)
 }
 
 h1{
-    margin: 1ch 1.6ch;
+    margin: 1ch 1ch;
     background-color: white;
     border-radius: 10px;
     padding: 1ch;
     text-align: right;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%)
 }
 
 ul{
@@ -32,4 +35,5 @@ li{
     border-radius: 10px;
     padding: 1ch;
     font-size: 1.8em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 40%)
 }
