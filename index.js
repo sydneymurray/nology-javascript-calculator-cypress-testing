@@ -1,6 +1,6 @@
 let operand = null
-let previousOperation = null
-let runningTotal = false
+let previousOperator = null
+let displayRunningTotal = false
 let display = document.querySelector("h1")
 
 function displayOperationClicked(event){
@@ -8,8 +8,8 @@ function displayOperationClicked(event){
         case "C":
             display.innerText = "0";
             operand = null;
-            previousOperation = null;
-            runningTotal = false;
+            previousOperator = null;
+            displayRunningTotal = false;
             return;
         case "←":
             display.innerText = display.innerText.slice(0, length-1);
@@ -25,25 +25,25 @@ function displayOperationClicked(event){
 }
 
 function numberClicked(event){
-    if (display.innerText === "0" || runningTotal )
+    if (display.innerText === "0" || displayRunningTotal )
         display.innerText = event.target.innerText
     else
         display.innerText += event.target.innerText 
-    runningTotal = false
+    displayRunningTotal = false
     console.log("Operand: " + operand)
-    console.log("Operation: " + previousOperation)
+    console.log("Operation: " + previousOperator)
 }
 
 function operatorClicked(event){
     if (!operand){
         operand = display.innerText
-        previousOperation = event.target.innerText
+        previousOperator = event.target.innerText
         display.innerText = "0"
         return
     }
     
-    runningTotal = true
-    switch (previousOperation){
+    displayRunningTotal = true
+    switch (previousOperator){
         case "x":
             display.innerText = Number(operand) * Number(display.innerText);
             break;
@@ -61,16 +61,16 @@ function operatorClicked(event){
 
     if (event.target.innerText === "="){
         operand = null;
-        previousOperation = null;
-        runningTotal = false
+        previousOperator = null;
+        displayRunningTotal = false
     } else{
-        previousOperation = event.target.innerText
+        previousOperator = event.target.innerText
         operand = display.innerText
         //display.innerText = "0"
     }
 
     console.log("Operand: " + operand)
-    console.log("Operation: " + previousOperation)
+    console.log("Operation: " + previousOperator)
 }
 
 
