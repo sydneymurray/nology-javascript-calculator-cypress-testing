@@ -29,6 +29,7 @@ function numberClicked(event){
         display.innerText = event.target.innerText
     else
         display.innerText += event.target.innerText 
+    
     displayRunningTotal = false
     console.log("Operand: " + operand)
     console.log("Operation: " + previousOperator)
