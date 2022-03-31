@@ -25,7 +25,7 @@
 #calculator__h2 {
   text-align: center;
   font-family: "Beau Rivage", cursive;
-  font-size: 4em;
+  font-size: 3.5em;
 }
 #calculator__h2:active ~ #calculator__h1 {
   transform: rotate(3600deg) scale(3);
