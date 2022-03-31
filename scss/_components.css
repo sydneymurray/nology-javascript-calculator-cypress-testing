@@ -1,31 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-style: bold;
-}
-
-#calculator {
-  max-width: 400px;
-  background-color: #dddddd;
-  border-radius: 20px;
-  padding: 2ch;
-  margin: 10ch auto;
-}
-
 #calculator {
   max-width: 400px;
   background-color: #dddddd;
   border-radius: 20px;
   padding: 2ch;
   margin: 8ch auto;
-  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-}
-#calculator__h2 {
-  text-align: center;
-  font-family: "Beau Rivage", cursive;
-  font-size: 4em;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
 }
 #calculator__h1 {
   margin: 1ch 1ch;
@@ -33,8 +12,7 @@
   border-radius: 10px;
   padding: 1ch;
   text-align: right;
-  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
-  transition: 1s;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
 }
 #calculator__ul {
   display: grid;
@@ -49,9 +27,9 @@
   background-color: white;
   margin: 1ch;
   border-radius: 10px;
-  padding: 10px;
+  padding: 1ch;
   font-size: 1.8em;
-  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
 }
 #calculator__ul .number {
   background-color: #ffe2e2;
@@ -60,16 +38,12 @@
   background-color: #d2e1ff;
 }
 #calculator__ul .equals {
-  background-color: #ccfd9e;
-}
-#calculator__ul .equals:active * #calculator__h1 {
-  transform: rotate(3600deg) scale(3);
+  background-color: #e8ffd2;
 }
 #calculator__ul .clear {
   background-color: #ff7b7b;
 }
 #calculator__ul .calculator__ul__li:hover {
   background-color: white;
-  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.4);
-  border: 1px solid black;
+  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.4);
 }
