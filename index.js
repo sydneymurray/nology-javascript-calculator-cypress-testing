@@ -12,6 +12,7 @@ function displayOperationClicked(event){
             displayRunningTotal = false;
             return;
         case "←":
+            if (display.innerText.length < 2) return;
             display.innerText = display.innerText.slice(0, length-1);
             return;
         case "±":
