@@ -4,6 +4,8 @@ var operand = null;
 var previousOperator = null;
 var displayRunningTotal = false;
 var display = document.querySelector("h1");
+var body = document.getElementById('body');
+document.addEventListener('keypress', keyPressed);
 
 function displayOperationClicked(event) {
   switch (event.target.innerText) {
@@ -84,4 +86,8 @@ function operatorClicked(event) {
 
   console.log("Operand: " + operand);
   console.log("Operation: " + previousOperator);
+}
+
+function keyPressed(event) {
+  console.log("Key Pressed: " + event.code);
 }

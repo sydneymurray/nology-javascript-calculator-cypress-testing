@@ -1,7 +1,9 @@
 let operand = null
 let previousOperator = null
 let displayRunningTotal = false
-let display = document.querySelector("h1")
+const display = document.querySelector("h1")
+const body = document.getElementById('body')
+document.addEventListener('keypress', keyPressed)
 
 function displayOperationClicked(event){
     switch (event.target.innerText){
@@ -77,6 +79,10 @@ function operatorClicked(event){
 
     console.log("Operand: " + operand)
     console.log("Operation: " + previousOperator)
+}
+
+function keyPressed(event){
+    console.log("Key Pressed: " + event.code)
 }
 
 
