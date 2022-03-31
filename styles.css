@@ -27,6 +27,9 @@
   font-family: "Beau Rivage", cursive;
   font-size: 4em;
 }
+#calculator__h2:active ~ #calculator__h1 {
+  transform: rotate(3600deg) scale(3);
+}
 #calculator__h1 {
   margin: 1ch 1ch;
   background-color: white;
@@ -62,7 +65,7 @@
 #calculator__ul .equals {
   background-color: #ccfd9e;
 }
-#calculator__ul .equals:active * #calculator__h1 {
+#calculator__ul .equals:hover #body #calculator #calculator__h1 {
   transform: rotate(3600deg) scale(3);
 }
 #calculator__ul .clear {

@@ -12,6 +12,9 @@
         font-family: 'Beau Rivage', cursive;
         font-size: 4em;
     }
+    &__h2:active ~ &__h1{
+        transform: rotate(3600deg) scale(3);
+    }
     &__h1{
         margin: 1ch 1ch;
         background-color: white;
@@ -46,7 +49,7 @@
         .equals{
             background-color: rgb(204, 253, 158);
         }
-        .equals:active * #calculator__h1{
+        .equals:hover #body #calculator #calculator__h1{
             transform: rotate(3600deg) scale(3);
         }
         .clear{
