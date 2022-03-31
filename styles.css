@@ -18,11 +18,10 @@
   background-color: #dddddd;
   border-radius: 20px;
   padding: 2ch;
-  margin: 10ch auto;
+  margin: 8ch auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-
-h1 {
+#calculator__h1 {
   margin: 1ch 1ch;
   background-color: white;
   border-radius: 10px;
@@ -30,16 +29,14 @@ h1 {
   text-align: right;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-
-ul {
+#calculator__ul {
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
   align-items: center;
   align-content: center;
 }
-
-li {
+#calculator__ul .calculator__ul__li {
   list-style-type: none;
   text-align: center;
   background-color: white;
