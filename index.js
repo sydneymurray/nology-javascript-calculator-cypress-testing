@@ -26,6 +26,10 @@ function displayOperationClicked(event){
 }
 
 function numberClicked(event){
+    if (display.innerText === "0" && event.target.innerText === ".") {
+        display.innerText = "0."
+        return
+    }
     if (display.innerText === "0" || displayRunningTotal )
         display.innerText = event.target.innerText
     else
