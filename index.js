@@ -113,7 +113,7 @@ function keyPressed(event){
             myEvent.target.innerText = "+";
             operatorClicked(myEvent);
             return;
-        case"Equal":
+        case "Equal":
         case "Enter":
             myEvent.target.innerText = "=";
             operatorClicked(myEvent);
@@ -136,10 +136,7 @@ function keyPressed(event){
             if(myEvent.target.innerText >= "0" && myEvent.target.innerText <="9") 
                 numberClicked(myEvent);
     }
-    
-
-    console.log("innerText: " + myEvent.target.innerText)
-       
+    console.log("innerText: " + myEvent.target.innerText)    
 }
 
 
