@@ -1,5 +1,5 @@
 
-#calculator{
+.calculator{
     max-width: 400px;
     background-color: #dddddd;
     //background-color: rgb(246, 239, 239);
@@ -49,7 +49,7 @@
         .equals{
             background-color: rgb(204, 253, 158);
         }
-        .equals:hover #body #calculator #calculator__h1{
+        .equals:hover #body .calculator .calculator__h1{
             transform: rotate(3600deg) scale(3);
         }
         .clear{
