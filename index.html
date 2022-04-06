@@ -15,29 +15,29 @@
 <body class="body">
     <div class="calculator">
         <h2 class="calculator__h2">|== Syd - Calc ==|</h2>
-        <h1 class="calculator__h1">0</h1>
+        <h1 data-cy="display" class="calculator__h1">0</h1>
         <section>
             <ul class="calculator__ul">
-                <li class="calculator__ul__li clear" onClick="displayOperationClicked(event)">C</li>
-                <li class="calculator__ul__li operator" onClick="displayOperationClicked(event)">%</li>
-                <li class="calculator__ul__li operator" onClick="displayOperationClicked(event)">±</li>
-                <li class="calculator__ul__li operator" onClick="operatorClicked(event)">/</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">7</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">8</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">9</li>
-                <li class="calculator__ul__li operator" onClick="operatorClicked(event)">x</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">4</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">5</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">6</li>
-                <li class="calculator__ul__li operator" onClick="operatorClicked(event)">-</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">1</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">2</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">3</li>
-                <li class="calculator__ul__li operator" onClick="operatorClicked(event)">+</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">0</li>
-                <li class="calculator__ul__li number" onClick="numberClicked(event)">.</li>
-                <li class="calculator__ul__li number" onClick="displayOperationClicked(event)">←</li>
-                <li class="calculator__ul__li equals" onClick="operatorClicked(event)">=</li>
+                <li data-cy="C" class="calculator__ul__li clear" onClick="displayOperationClicked(event)">C</li>
+                <li data-cy="%" class="calculator__ul__li operator" onClick="displayOperationClicked(event)">%</li>
+                <li data-cy="±" class="calculator__ul__li operator" onClick="displayOperationClicked(event)">±</li>
+                <li data-cy="/" class="calculator__ul__li operator" onClick="operatorClicked(event)">/</li>
+                <li data-cy="7" class="calculator__ul__li number" onClick="numberClicked(event)">7</li>
+                <li data-cy="8" class="calculator__ul__li number" onClick="numberClicked(event)">8</li>
+                <li data-cy="9" class="calculator__ul__li number" onClick="numberClicked(event)">9</li>
+                <li data-cy="x" class="calculator__ul__li operator" onClick="operatorClicked(event)">x</li>
+                <li data-cy="4" class="calculator__ul__li number" onClick="numberClicked(event)">4</li>
+                <li data-cy="5" class="calculator__ul__li number" onClick="numberClicked(event)">5</li>
+                <li data-cy="6" class="calculator__ul__li number" onClick="numberClicked(event)">6</li>
+                <li data-cy="-" class="calculator__ul__li operator" onClick="operatorClicked(event)">-</li>
+                <li data-cy="1" class="calculator__ul__li number" onClick="numberClicked(event)">1</li>
+                <li data-cy="2" class="calculator__ul__li number" onClick="numberClicked(event)">2</li>
+                <li data-cy="3" class="calculator__ul__li number" onClick="numberClicked(event)">3</li>
+                <li data-cy="+" class="calculator__ul__li operator" onClick="operatorClicked(event)">+</li>
+                <li data-cy="0" class="calculator__ul__li number" onClick="numberClicked(event)">0</li>
+                <li data-cy="." class="calculator__ul__li number" onClick="numberClicked(event)">.</li>
+                <li data-cy="←" class="calculator__ul__li number" onClick="displayOperationClicked(event)">←</li>
+                <li data-cy="=" class="calculator__ul__li equals" onClick="operatorClicked(event)">=</li>
             </ul>
         </section>
     </div>

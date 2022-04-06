@@ -1,0 +1,8 @@
+
+npm i cypress --save-dev
+npx cypress open
+
+Delete the contents and cypress/integration
+Create your test file test.spec.js within the cpyress/integration folder
+
+
