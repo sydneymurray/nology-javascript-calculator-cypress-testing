@@ -12,19 +12,19 @@ function operatorClicked(event) {
 
   switch (previousOperator) {
     case "x":
-      display.innerText = Number(operand) * Number(display.innerText);
+      display.innerText = (Number(operand) * Number(display.innerText)).toFixed(12);
       break;
 
     case "/":
-      display.innerText = Number(operand) / Number(display.innerText);
+      display.innerText = (Number(operand) / Number(display.innerText)).toFixed(12);
       break;
 
     case "+":
-      display.innerText = Number(operand) + Number(display.innerText);
+      display.innerText = (Number(operand) + Number(display.innerText)).toFixed(12);
       break;
 
     case "-":
-      display.innerText = Number(operand) - Number(display.innerText);
+      display.innerText = (Number(operand) - Number(display.innerText)).toFixed(12);
       break;
 
     default:
@@ -37,6 +37,12 @@ function operatorClicked(event) {
   } else {
     previousOperator = event.target.innerText;
     operand = display.innerText; //display.innerText = "0"
+  }
+
+  if (display.innerText.includes("e")) {
+    console.log(display.innerText);
+    var floatingPoint = display.innerText.split("e");
+    display.innerText = floatingPoint[0].slice(0, 15) + "e" + floatingPoint[1];
   }
 
   if (display.innerText.length > 19) display.innerText = display.innerText.slice(0, 19);
