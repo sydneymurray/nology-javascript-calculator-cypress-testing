@@ -33,6 +33,9 @@ function operatorClicked(event){
         //display.innerText = "0"
     }
 
+    if (display.innerText.length > 19) 
+    display.innerText = display.innerText.slice(0, 19)
+
     console.log("Operand: " + operand)
     console.log("Operation: " + previousOperator)
 }
