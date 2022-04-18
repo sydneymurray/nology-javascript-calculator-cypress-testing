@@ -1,25 +1,18 @@
- Introduction
- This project is a nology challenge to build on online calculator
- Live Site: 
- GitHub: https://github.com/sydneymurray/nology-javascript-calculator
+# Syd-Calc
+This project is a nology challenge to build on online calculator. \
+I then added Cypress End to End testing. \
+Hosted at:- \
+https://sydneymurray.github.io/nology-javascript-calculator-cypress-testing/
 
- Requirements
- HTML & CSS compatible Web Server
+## How to build this app
+mkdir calculator \
+cd calculator \
+git clone https://github.com/sydneymurray/nology-javascript-calculator-cypress-testing.git \
+npm install
 
- Recommended modules
- Sassy CSS is required
 
- Installation
- Install any of the SCSS extensions in VS-Code
+## Run a Cypress Test Suite
+npx cypress open
 
- Configuration
- None. 
- This project is HTML, CSS & JavaScript only
- 
- Troubleshooting
- 
- FAQ
- 
- Maintainers
- sydney Murray 
+
 
