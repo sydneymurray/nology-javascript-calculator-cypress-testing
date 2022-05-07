@@ -12,19 +12,20 @@ function operatorClicked(event) {
 
   switch (previousOperator) {
     case "x":
-      display.innerText = (Number(operand) * Number(display.innerText)).toFixed(12);
+      //            display.innerText = (Number(operand) * Number(display.innerText)).toFixed(12);
+      display.innerText = Number(operand) * Number(display.innerText);
       break;
 
     case "/":
-      display.innerText = (Number(operand) / Number(display.innerText)).toFixed(12);
+      display.innerText = Number(operand) / Number(display.innerText);
       break;
 
     case "+":
-      display.innerText = (Number(operand) + Number(display.innerText)).toFixed(12);
+      display.innerText = Number(operand) + Number(display.innerText);
       break;
 
     case "-":
-      display.innerText = (Number(operand) - Number(display.innerText)).toFixed(12);
+      display.innerText = Number(operand) - Number(display.innerText);
       break;
 
     default:

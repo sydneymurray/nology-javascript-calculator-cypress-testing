@@ -9,16 +9,17 @@ function operatorClicked(event){
     displayRunningTotal = true
     switch (previousOperator){
         case "x":
-            display.innerText = (Number(operand) * Number(display.innerText)).toFixed(12);
+//            display.innerText = (Number(operand) * Number(display.innerText)).toFixed(12);
+            display.innerText = (Number(operand) * Number(display.innerText));
             break;
         case "/":
-            display.innerText = (Number(operand) / Number(display.innerText)).toFixed(12);
+            display.innerText = (Number(operand) / Number(display.innerText));
             break;
         case "+":
-            display.innerText = (Number(operand) + Number(display.innerText)).toFixed(12);
+            display.innerText = (Number(operand) + Number(display.innerText));
             break;
         case "-":
-            display.innerText = (Number(operand) - Number(display.innerText)).toFixed(12);
+            display.innerText = (Number(operand) - Number(display.innerText));
             break;
         default:
     }
